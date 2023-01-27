@@ -1,0 +1,143 @@
+*, html, body {
+    margin :0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    min-width: 100%;
+    background-color: #FCFFE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1673701077 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673701077 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 258px;
+}
+
+.custom-shape-divider-bottom-1673701077 .shape-fill {
+    fill: #2B3467;
+}
+
+.custom-shape-divider-top-1673701312 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1673701312 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 98px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1673701312 .shape-fill {
+    fill: #EB455F;
+}
+
+.wrapper {
+    background: #BAD7E9;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    z-index: 2;
+}
+
+.grid-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    /* border: solid black 1px; */
+    margin: 1px;
+    transition: all .2s ease;
+}
+
+.grid-item:hover{
+    background-color: rgba(255, 255, 255, .9)
+
+}
+
+#restart {
+    background-color: #BAD7E9;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    width: 150px;
+    padding: 10px 15px;
+    font-weight: 800;
+    transition: all .2s ease-in;
+    color: #FCFFE7;
+}
+
+#restart:hover {
+    color: white;
+    background-color: #a0b9c9;
+    
+}
+
+.box-status {
+    background-color: white;
+    padding:10px 77px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.game-status {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+.fade-out {
+    animation: fade-out .1s ease-out;
+}
+
+.fade-in {
+    animation: fade-in .1s ease-in;
+}
+
+.fade-in-bg {
+    animation: fade-in 1s ease-in;
+}
+@keyframes fade-out{
+    from {font-size: 50px;}
+    to {font-size: 0px;}
+}
+
+@keyframes fade-in {
+    from {font-size: 0px; }
+    to {font-size: 50px; }
+}
+
+@keyframes fade-in-h1 {
+    from {font-size: 0px; }
+    to {font-size: 32px; }
+}
